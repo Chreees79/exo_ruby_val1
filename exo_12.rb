@@ -1,0 +1,13 @@
+puts "Bonjour l'ami, peux-tu me donner ton âge ?"
+print "> "
+user_birth = gets.chomp.to_i
+x = user_birth
+y = 0
+while x >= 0
+  puts "Il y a #{x} ans, tu avais #{y} ans"
+  x -= 1
+  y += 1
+  if x == y
+    puts "Il y a #{x} ans, tu avais la moitié de l'âge que tu as aujourd'hui "
+  end
+end
